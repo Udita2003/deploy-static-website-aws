@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My AWS Website</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar">
+    <div class="logo">☁️ MyCloud Site</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1 class="hero-title">Hello, I'm <span id="typed-name">a Developer</span></h1>
+      <p class="hero-subtitle">Welcome to my static website hosted on <strong>AWS S3 + CloudFront</strong> 🚀</p>
+      <a href="#about" class="btn">Learn More</a>
+    </div>
+    <div class="hero-image">
+      <div class="cloud-animation">☁️</div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-title">About This Project</h2>
+      <div class="about-grid">
+        <div class="about-card">
+          <span class="icon">🪣</span>
+          <h3>Amazon S3</h3>
+          <p>This website is stored in an S3 bucket configured for static website hosting. S3 stands for Simple Storage Service.</p>
+        </div>
+        <div class="about-card">
+          <span class="icon">⚡</span>
+          <h3>CloudFront CDN</h3>
+          <p>AWS CloudFront distributes content globally via edge locations, making your site load super fast for everyone.</p>
+        </div>
+        <div class="about-card">
+          <span class="icon">🔒</span>
+          <h3>IAM Policy</h3>
+          <p>IAM (Identity and Access Management) policies control who can access your S3 bucket and its contents securely.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS SECTION -->
+  <section class="section skills-section" id="skills">
+    <div class="container">
+      <h2 class="section-title">Technologies Used</h2>
+      <div class="skills-grid">
+        <div class="skill-bar-container">
+          <span>HTML5</span>
+          <div class="skill-bar"><div class="skill-fill" data-width="90%"></div></div>
+        </div>
+        <div class="skill-bar-container">
+          <span>CSS3</span>
+          <div class="skill-bar"><div class="skill-fill" data-width="85%"></div></div>
+        </div>
+        <div class="skill-bar-container">
+          <span>JavaScript</span>
+          <div class="skill-bar"><div class="skill-fill" data-width="80%"></div></div>
+        </div>
+        <div class="skill-bar-container">
+          <span>AWS S3</span>
+          <div class="skill-bar"><div class="skill-fill" data-width="75%"></div></div>
+        </div>
+        <div class="skill-bar-container">
+          <span>CloudFront</span>
+          <div class="skill-bar"><div class="skill-fill" data-width="70%"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COUNTER SECTION -->
+  <section class="counter-section">
+    <div class="container counter-grid">
+      <div class="counter-item">
+        <span class="counter" data-target="3">0</span>
+        <p>AWS Services Used</p>
+      </div>
+      <div class="counter-item">
+        <span class="counter" data-target="100">0</span>
+        <p>% Serverless</p>
+      </div>
+      <div class="counter-item">
+        <span class="counter" data-target="0">0</span>
+        <p>Servers Managed</p>
+      </div>
+      <div class="counter-item">
+        <span class="counter" data-target="99">0</span>
+        <p>% Uptime (S3 SLA)</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="section" id="contact">
+    <div class="container">
+      <h2 class="section-title">Get In Touch</h2>
+      <div class="contact-box">
+        <p>This project was built and deployed as part of a <strong>Udacity / Accenture</strong> learning module.</p>
+        <p>Hosted on <strong>AWS S3</strong> and served via <strong>CloudFront</strong>.</p>
+        <div class="tags">
+          <span class="tag">☁️ AWS</span>
+          <span class="tag">🚀 S3</span>
+          <span class="tag">⚡ CloudFront</span>
+          <span class="tag">📦 Static Site</span>
+          <span class="tag">🔒 IAM</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2025 My AWS Static Website | Deployed with Amazon S3 & CloudFront</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
